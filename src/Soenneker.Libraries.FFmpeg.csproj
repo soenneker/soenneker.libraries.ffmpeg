@@ -8,12 +8,12 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Description>Simply adds the FFmpeg executable</Description>
+        <Description>Simply adds the FFmpeg Windows executable</Description>
         <Version Condition="'$(BUILD_VERSION)' == ''">2.1.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Libraries.FFmpeg</AssemblyName>
         <PackageId>Soenneker.Libraries.FFmpeg</PackageId>
-        <PackageTags>libraries ffmpeg valuetaskextension c# .net csharp dotnet</PackageTags>
+        <PackageTags>libraries ffmpeg c# .net csharp dotnet</PackageTags>
         <Copyright>Copyright © 2023 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
