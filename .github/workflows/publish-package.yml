@@ -17,7 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      
+        with:
+          lfs: 'true'
+
       - name: Setting up build version
         run: |
           version=$(($GITHUB_RUN_NUMBER))

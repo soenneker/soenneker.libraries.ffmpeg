@@ -9,7 +9,7 @@
 
     <PropertyGroup>
         <Description>Simply adds the FFmpeg Windows executable</Description>
-        <Version Condition="'$(BUILD_VERSION)' == ''">2.1.0</Version>
+        <Version Condition="'$(BUILD_VERSION)' == ''">2.5.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.Libraries.FFmpeg</AssemblyName>
         <PackageId>Soenneker.Libraries.FFmpeg</PackageId>
