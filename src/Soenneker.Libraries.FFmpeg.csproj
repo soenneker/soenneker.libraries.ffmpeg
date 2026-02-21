@@ -36,7 +36,8 @@
         <None Include="..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
-        <Content Include="Resources\ffmpeg.exe" Pack="true" PackageCopyToOutput="true" PackagePath="contentFiles\any\any\Resources\">
+        <Content Include="Resources\ffmpeg.exe" Pack="true" PackageCopyToOutput="true" 
+                 PackagePath="contentFiles\any\any\Resources\" BuildAction="None">
         </Content>
     </ItemGroup>
 </Project>
