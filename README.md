@@ -5,7 +5,7 @@
 
 # Soenneker.Libraries.FFmpeg
 
-Simply adds the FFmpeg Windows executable, updated daily (if available).
+The FFmpeg Windows executable packaged as a .NET content asset.
 
 ## Install
 
@@ -13,11 +13,16 @@ Simply adds the FFmpeg Windows executable, updated daily (if available).
 dotnet add package Soenneker.Libraries.FFmpeg
 ```
 
-## What it provides
+The package copies the executable beneath the application output directory:
 
-- Simply adds the FFmpeg Windows executable, updated daily (if available).
-- The file is copied to the output directory, and located at the relative path: `Resources\ffmpeg.exe`.
+```text
+Resources/ffmpeg.exe
+```
 
-## How to use it
+Resolve it without depending on the process working directory:
 
-After installation, resolve the packaged file from the output-relative path above. The package deploys the asset but does not invoke it for you.
+```csharp
+string ffmpeg = Path.Combine(AppContext.BaseDirectory, "Resources", "ffmpeg.exe");
+```
+
+This package supplies the Windows executable but does not start or manage FFmpeg. Use `ProcessStartInfo.ArgumentList` when building commands from variable input so paths and values remain separate arguments.
